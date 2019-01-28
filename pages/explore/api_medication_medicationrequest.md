@@ -84,6 +84,9 @@ Systems SHOULD support the following search combinations:
 
  * patient + status
 
+if an external reference to Medication is used, the server as a minimum SHOULD support the `include` parameter capability for MedicationRequest.medication and MedicationStatement.medication searches.
+
+
 
 <!--  include custom/search.date.plus.html para="2.1.1." content="MedicationRequest" name="authoredon" -->
 
@@ -94,6 +97,10 @@ Systems SHOULD support the following search combinations:
 {% include custom/search.patient.html para="2.1.1." content="MedicationRequest" %}
 
 {% include custom/search.status.plus.html para="2.1.2." name="status" content="MedicationRequest" options="active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown" selected="active"  %}
+
+{% include custom/search.medication.includes.html para="2.1.3." name="includes" content="MedicationRequest" %}
+
+
 
 {% include custom/search.response.html resource="MedicationRequest" %}
 

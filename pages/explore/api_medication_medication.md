@@ -29,9 +29,18 @@ Search Medication resources. Returns a bundle of all `Medication` resources for 
 
 <!-- include custom/search.parameters.html resource="Medication" link="medication.html#search" -->
 
-There are NO search parameters mandated as a minimum in the API for the Medication resource.
+There is NO required search criteria in the API for the Medication resource.
 
 Search parameters can be added to reflect local requirements.
+
+
+{% include note.html content="MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. <br> <br> If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria SHOULD be supported." %}
+
+ - MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. 
+ - If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria SHOULD be supported.
+
+
+
 
 <!--
 <table style="min-width:100%;width:100%">
