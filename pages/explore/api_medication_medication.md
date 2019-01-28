@@ -34,10 +34,9 @@ There is NO required search criteria in the API for the Medication resource.
 Search parameters can be added to reflect local requirements.
 
 
-{% include note.html content="MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. <br> <br> If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria SHOULD be supported." %}
+{% include note.html content="<br>MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. <br> <br> If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria SHOULD be supported." %}
 
- - MedicationStatement and MedicationRequest resources can represent a medication, using an external reference to a Medication resource. 
- - If an external Medication Resource is used in a MedicationStatement or a MedicationRequest, then the READ and SEARCH Criteria SHOULD be supported.
+
 
 
 

@@ -68,7 +68,7 @@ Systems SHOULD support the following search combinations:
  * patient + status
 
 
-if an external reference to Medication is used, the server as a minimum SHOULD support the `include` parameter capability for MedicationRequest.medication and MedicationStatement.medication searches.
+If an external reference to Medication is used, the server as a minimum SHOULD support the `include` parameter capability for MedicationRequest.medication and MedicationStatement.medication searches.
 
 
 
