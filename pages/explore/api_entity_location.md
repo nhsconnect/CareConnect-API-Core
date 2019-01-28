@@ -74,11 +74,11 @@ Fetches a bundle of all `Location` resources for the specified search criteria.
 {% include custom/search.nopat.string.html para="2.1.1." resource="Location" content="address-postcode"  example="NG10%201RY" text1="Post Code" text2="NG10 1RY" %}
 -->
 
-{% include custom/search.nopat.string.html para="2.1.1." resource="Location" content="address"  example="York" text1="name" text2="York" %}
+{% include custom/search.nopat.string.html para="2.1.1." resource="Location" content="address"  example="York" text1="address string" text2="York" %}
 
 {% include custom/search.nopat.identifier.html para="2.1.2." resource="Location" content="identifier" subtext="SDS/ODS Code" example="https://fhir.nhs.uk/Id/ods-site-code|RTG08" text1="NHS Trust Site" text2="RTG08 (Long Eaton Clinic)" %}
 
-{% include custom/search.nopat.string.html para="2.1.3." resource="Location" content="name"  example="York Hospital" text1="name" text2="York Hospital" %}
+{% include custom/search.nopat.string.html para="2.1.3." resource="Location" content="name"  example="York Hospital" text1="name string" text2="York Hospital" %}
 
 {% include custom/search.response.html resource="Location" %}
 

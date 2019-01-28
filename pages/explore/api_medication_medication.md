@@ -27,7 +27,11 @@ Search Medication resources. Returns a bundle of all `Medication` resources for 
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Medication" link="medication.html#search" %}
+<!-- include custom/search.parameters.html resource="Medication" link="medication.html#search" -->
+
+There are NO search parameters mandated as a minimum in the API for the Medication resource.
+
+Search parameters can be added to reflect local requirements.
 
 <!--
 <table style="min-width:100%;width:100%">

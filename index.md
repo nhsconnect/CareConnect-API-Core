@@ -34,6 +34,71 @@ The initial core API has been created to provide read only access to fine graine
 The resources in scope for this API are:
 
 
+<table style="min-width:100%;width:100%">
+<tr id="clinical">
+<th style="width:33%;">Clinical</th>
+<th style="width:33%;">&nbsp;</th>
+<th style="width:33%;">&nbsp;</th>
+</tr>
+<tr id="clinicald">
+<th>Summary</th>
+<th>Diagnostics</th>
+<th>Medications</th>
+</tr>
+<tr>
+<td><a href="api_clinical_allergyintolerance.html">AllergyIntolerance</a></td>
+<td><a href="api_diagnostics_observation.html">Observation</a></td>
+<td><a href="api_medication_medication.html">Medication</a></td>
+</tr>
+<tr>
+<td><a href="api_clinical_condition.html">Condition</a> (Problem)</td>
+<td>&nbsp;</td>
+<td><a href="api_medication_medicationorder.html">MedicationOrder</a></td>
+</tr>
+<tr>
+<td><a href="api_clinical_procedure.html">Procedure</a></td>
+<td>&nbsp;</td>
+<td><a href="api_medication_medicationstatement.html">MedicationStatement</a></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="api_medication_immunization.html">Immunization</a></td>
+</tr>
+</table>
+
+<table style="min-width:100%;width:100%">
+<tr id="base">
+<th style="width:33%;">Base</th>
+<th style="width:33%;">&nbsp;</th>
+<th style="width:33%;">&nbsp;</th>
+</tr>
+<tr id="based">
+<th>Individuals</th>
+<th>Entities</th>
+<th>Management</th>
+</tr>
+<tr>
+<td><a href="api_entity_patient.html">Patient</a></td>
+<td><a href="api_entity_organisation.html">Organization</a></td>
+<td><a href="api_management_encounter.html">Encounter</a></td><td></td>
+</tr>
+<tr>
+<td><a href="api_entity_practitioner.html">Practitioner</a></td>
+<td><a href="api_entity_location.html">Location</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><a href="api_entity_practitioner_role.html">PractitionerRole</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+
+
+
+<!--
 -	AllergyIntolerance
 -	Condition
 -	Encounter
@@ -48,6 +113,7 @@ The resources in scope for this API are:
 -	Practitioner
 -	PractitionerRole
 -	Procedure
+-->
 
 # API Query Mechanism and Conformance #
 

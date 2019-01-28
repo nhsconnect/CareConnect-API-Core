@@ -63,7 +63,7 @@ Search for all immunization resources for a patient. Fetches a bundle of all `Im
     <td><code class="highlighter-rouge">vaccination-procedure-code</code></td>
     <td><code class="highlighter-rouge">token</code></td>
     <td>Procedure code to identify the stage in the immunisation schedule</td>
-    <td>SHALL</td>
+    <td>SHOULD</td>
     <td>Immunization.vaccinationProcedure</td>
 </tr>
 </table>

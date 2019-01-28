@@ -65,7 +65,7 @@ Search for all problems and health concerns for a patient. Fetches a bundle of a
     <td><code class="highlighter-rouge">patient</code></td>
     <td><code class="highlighter-rouge">reference</code></td>
     <td>Who has the condition?</td>
-    <td>SHALL</td>
+    <td>MUST</td>
     <td>Condition.patient<br>(Patient)</td>
 </tr>
 </table>

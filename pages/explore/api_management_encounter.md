@@ -93,6 +93,8 @@ Systems SHOULD support the following search combinations:
 
 {% include custom/search.type.encounter.html para="2.1.4." content="Encounter" name="type" %}
 
+{% include custom/search.patient.date.type.encounter.html para="2.1.5." content="Encounter" name="patient + type + date" %}
+
 {% include custom/search.response.html resource="Encounter" %}
 
 ## 3. Example ##

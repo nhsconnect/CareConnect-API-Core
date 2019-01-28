@@ -6,17 +6,17 @@ GET [baseUrl]/{{include.content}}?patient=[id]&type=[code]
 
 <p>See <a href="https://www.hl7.org/fhir/STU3/search.html#token">token</a> for details on this parameter.</p>
 
-<p>To search for {{include.content}}s with type<code class="highlighter-rouge">TBC</code> using SNOMED CT</p>
+<p>To search for {{include.content}}s with type<code class="highlighter-rouge">Consultation</code> using SNOMED CT</p>
 
 <div class="language-http highlighter-rouge">
-<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.content}}?patient=[id]&code=http://snomed.info/sct|39065001
+<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.content}}?patient=[id]&code=http://snomed.info/sct|11429006
 </span></code>
-Return all {{include.content}} resources with SNOMED CT code of 39065001 and Patient with a logical id of 1.
+Return all {{include.content}} resources with SNOMED CT encounter code of 11429006 and Patient with a logical id of 1.
 </pre>
 </div>
 <div class="language-http highlighter-rouge">
-<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.content}}?patient=1&code=39065001
+<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.content}}?patient=1&code=11429006
 </span></code>
-Return all {{include.content}} resources with code of 39065001 from any CodeSystem and Patient with a logical id of 1.</pre>
+Return all {{include.content}} resources with an encounter code of 11429006 from any CodeSystem and Patient with a logical id of 1.</pre>
 </div>
 

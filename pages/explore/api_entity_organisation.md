@@ -62,7 +62,7 @@ Fetches a bundle of all `Organization` resources for the specified search criter
 </tr>
 </table>
 
-{% include custom/search.nopat.string.html para="2.1.1." resource="Organization" content="address"  example="York" text1="name" text2="York" %}
+{% include custom/search.nopat.string.html para="2.1.1." resource="Organization" content="address"  example="York" text1="address string" text2="York" %}
 
 {% include custom/search.nopat.identifier.html para="2.1.2." resource="Organization" content="identifier" subtext="SDS/ODS Code" example="https://fhir.nhs.uk/Id/ods-organization-code|RTG" text1="NHS Organisation" text2="RTG (Derby Teaching Hospitals NHS Trust)" %}
 

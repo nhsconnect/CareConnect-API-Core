@@ -91,6 +91,10 @@ Systems MUST support the following search combinations:
 {% include custom/search.date.html para="2.1.2." content="Observation" %}
 
 {% include custom/search.patient.html para="2.1.3." content="Observation" %}
+
+{% include custom/search.patient.code.date.observation.html para="2.1.4." content="Observation" %}
+
+
 <!--
 {% include custom/search.subject.html para="2.5." content="Observation" %}
 -->

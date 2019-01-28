@@ -68,7 +68,7 @@ Fetches a bundle of all `MedicationRequest` resources for the specified patient.
     <td><code class="highlighter-rouge">patient</code></td>
     <td><code class="highlighter-rouge">reference</code></td>
     <td>The identity of a patient to list orders for</td>
-    <td>SMUST</td>
+    <td>MUST</td>
     <td>MedicationRequest.patient<br>(Patient)</td>
 </tr>
 <tr>
