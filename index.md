@@ -121,8 +121,8 @@ The API intends to mandate a minimal set of the query mechanism to ensure the ma
 
  Query parameters conformance will be categorised as:
 
-- MUST – these search parameters MUST be implemented for the specified resource type
-- SHOULD – these search parameters are expected to be implemented, if the data to support the query is present in the host system
+- <b>MUST</b> – these search parameters MUST be implemented for the specified resource type
+- <b>SHOULD</b> – these search parameters are expected to be implemented, if the data to support the query is present in the host system
 
 Additional search parameters can be added to reflect local requirements.
 
