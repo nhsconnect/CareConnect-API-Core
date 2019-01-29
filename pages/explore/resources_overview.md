@@ -11,6 +11,7 @@ summary: "Overview of the Resources section"
 
 <!-- include custom/api_overview.svg -->
 
+<!--
 ## 1. Pre-Requisites for FHIR Servers ##
 
 ### 1.1 CareConnectAPI Requirements ###
@@ -35,14 +36,16 @@ Only verified NHS Number SHALL be used with CareConnect profiles. This can be ac
 
 {% include custom/contribute.html content="Get in touch with us to improve the Prerequisites." %}
 
-## 2. Resource API Structure ##
+-->
+
+## 1. Resource API Structure ##
 The FHIR Care Connect profile API's described in the Explore section of this implementation guide have been structured consistently in the following way:
 - `0.` References
 - `1.` Read
 - `2.` Search Parameters
 - `3.` Example
 
-### 2.1 Resource API Structure Details ###
+### 1.1 Resource API Structure Details ###
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -67,7 +70,7 @@ The FHIR Care Connect profile API's described in the Explore section of this imp
 </tr>
 </table>
 
-## 3. Resource API's ##
+## 2. Resource API's ##
 This section looks at the Care Connect profile API's covered within this implementation guide.
 
 

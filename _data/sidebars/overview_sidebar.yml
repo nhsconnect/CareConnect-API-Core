@@ -47,8 +47,13 @@ entries:
     #    - title: "Placeholder for case study"
     #      url: /engage_case_studies.html
     #      output: web
-
-  - title: Development Guidance
+  - title: Conformance
+    output: web
+    folderitems:
+    - title: Conformance Requirements
+      url: /conformance_coreapi.html
+      output: web
+  - title: Resources
     output: web
     folderitems:
     - title: Overview
@@ -177,7 +182,6 @@ entries:
  #   - title: Overview
  #     url: /deploy.html
  #     output: web
-
   - title: Help & Support
     output: web
     folderitems:
