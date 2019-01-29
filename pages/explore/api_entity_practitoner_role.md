@@ -12,6 +12,8 @@ summary: A specific set of Roles/Locations/specialties/services that a practitio
 {% include custom/fhir.STU3.reference.html resource="PractitionerRole" page="CareConnect-PractitionerRole-1" fhirname="Practitioner Role" fhirlink="practitionerrole.html" content="" userlink="" %}
 
 
+
+
 ## 1. Read ##
 
 <div markdown="span" class="alert alert-success" role="alert">
