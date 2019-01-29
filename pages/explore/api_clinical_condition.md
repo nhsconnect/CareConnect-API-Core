@@ -90,7 +90,7 @@ Systems SHOULD support the following search combinations:
 {% include custom/search.date.plus.html para="2.1.1." content="Condition" name="asserted-date" %}
 -->
 {% include custom/search.status.plus.html para="2.1.1." content="Condition" options="
-problem-list-item | encounter-diagnosis | presenting-complaint" selected="problem-list-item" name="category" %}
+co-morbidity | encounter-diagnosis | issue | presenting-complaint | problem-list-item |" selected="problem-list-item" name="category" %}
 
 {% include custom/search.status.plus.html para="2.1.2." content="Condition" options="active | recurrence | inactive | remission | resolved" selected="active" name="clinical-status" %}
 
