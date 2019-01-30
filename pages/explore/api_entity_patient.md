@@ -112,8 +112,14 @@ Fetches a bundle of all `Patient` resources for the specified patient or search 
 -->
 </table>
 
+Systems MUST support the following search combinations:
 
-Given, Family, Birthdate & Gender should only be used for combination queries.
+* name + gender
+* name + birthdate
+* family + gender
+* given + gender
+
+
 
 <!--
 Client systems SHALL provide at least two parameters of differing types, unless searching on identifier where one parameter is permitted. Systems SHALL support the following search combinations:

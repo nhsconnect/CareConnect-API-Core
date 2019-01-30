@@ -47,7 +47,7 @@ In order to be a compliant FHIR server, client systems need to expose a valid FH
 ### 1.2 Profile Interaction Summary ###
 
 1. All servers MUST make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read </a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search </a> interactions for the Profiles the server chooses to support.
-<!--2. All servers SHOULD make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread </a> and <a href="http://hl7.org/fhir/STU3/http.html#history-instance">history-instance </a> interactions for the Profiles the server chooses to support.-->
+2. All servers SHOULD make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread </a> and <a href="http://hl7.org/fhir/STU3/http.html#history-instance">history-instance </a> interactions for the Profiles the server chooses to support.
 
 
 Summary of the Care Connect Core API search criteria
@@ -126,7 +126,7 @@ Specific server search capabilities are described in detail in each of the resou
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_entity_patient.html">Patient </a></code></td>
-    <td>identifier, given, family, birthdate, gender, name, * given, family, birthdate and gender should only be used for combination queries TBC*</td>
+    <td>identifier, given, family, birthdate, gender, name, name + gender , name + birthdate , family + gender , given + gender</td>
     <td></td>
     <td></td>
 </tr>
@@ -153,10 +153,16 @@ Specific server search capabilities are described in detail in each of the resou
 </table>
 
 
+### 1.3 Capability Statement ###
+
+FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-ServerRequirements-CapabilityStatement-1v0.2.xml){:target="_blank"}
+
+<!--[Demographics Batch Service (DBS)](CareConnect-ServerRequirements-CapabilityStatement-1){:target="_blank"}-->
+
+ 
 
 
-
-### 1.3 NHS Number ###
+### 1.4 NHS Number ###
 
 Only verified NHS Number SHALL be used with CareConnect profiles. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
 

@@ -19,12 +19,18 @@ GET [baseUrl]/metadata</div>
 
 The /metadata path on the root of the FHIR server will return the Capability statement for the FHIR server:
 
+<!--
 Alternatively, a HTTP OPTIONS request against the root of the FHIR server will also return the capability profile:
 
 <div markdown="span" class="alert alert-success" role="alert">
 OPTIONS [baseUrl]/</div>
+-->
 
-For details of this interaction - see the [HL7 FHIR STU3 RESTful API](http.html#capabilities){:target="_blank"}
+For details of this interaction - see the [HL7 FHIR STU3 RESTful API](https://www.hl7.org/fhir/STU3/http.html#capabilities){:target="_blank"}
+
+
+<!--For details of this interaction - see the [HL7 FHIR STU3 RESTful API](http.html#capabilities){:target="_blank"}-->
+
 
 All requests SHALL contain a valid ‘Authorization’ header and SHALL contain an ‘Accept’ header with at least one of the following application/fhir+json or application/fhir+xml.
 
