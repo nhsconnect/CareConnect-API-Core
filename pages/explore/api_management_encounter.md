@@ -56,7 +56,7 @@ Fetches a bundle of all `Encounter` resources for the specified patient.
 <tr>
     <td><code class="highlighter-rouge">status</code></td>
     <td><code class="highlighter-rouge">token</code></td>
-     <td>planned | arrived | triaged | in-progress | onleave | finished | cancelled +</td>
+     <td>planned | arrived | triaged | in-progress | onleave | finished | cancelled | entered-in-error | unknown</td>
     <td>MUST</td>
     <td>Encounter.status</td>
 </tr>
@@ -89,7 +89,7 @@ Systems SHOULD support the following search combinations:
 
 {% include custom/search.patient.html para="2.1.2." content="Encounter" %}
 
-{% include custom/search.status.plus.html para="2.1.3." name="status" content="Encounter" options="planned | arrived | triaged | in-progress | onleave | finished | cancelled +" selected="planned" %}
+{% include custom/search.status.plus.html para="2.1.3." name="status" content="Encounter" options="planned | arrived | triaged | in-progress | onleave | finished | cancelled | entered-in-error | unknown" selected="planned" %}
 
 {% include custom/search.type.encounter.html para="2.1.4." content="Encounter" name="type" %}
 

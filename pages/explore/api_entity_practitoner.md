@@ -75,7 +75,7 @@ Fetches a bundle of all `Practitioner` resources for the specified search criter
 {% include custom/search.nopat.identifier.html para="2.1.1." resource="Practitioner" content="identifier" subtext="SDS Id or ODS Code" example="https://fhir.nhs.uk/Id/sds-user-id|123456" text1="SDS User ID" text2="123456" %}
 
 <div class="language-http highlighter-rouge">
-<pre class="highlight"><code><span class="err">GET [baseUrl]/Practitioner?identifier=https://fhir.nhs.uk/Id/????????|G8133438
+<pre class="highlight"><code><span class="err">GET [baseUrl]/Practitioner?identifier=https://fhir.nhs.uk/Id/sds-role-profile-id|G8133438
 </span></code>
 Return all Practitioner resources that have a ODS Practitioner/Consultant of G8133438 </pre>
 </div>

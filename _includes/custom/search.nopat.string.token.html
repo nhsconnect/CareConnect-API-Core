@@ -1,0 +1,33 @@
+<h4 id="{{include.content}}">{{include.para}} {{include.content}} + {{include.content1}}</h4>
+
+<div markdown="span" class="alert alert-success" role="alert">
+GET [baseUrl]/{{include.resource}}?{{include.content}}=[{{include.content}}]&{{include.content1}}=[system]|[code]
+<br> GET [baseUrl]/{{include.resource}}?{{include.content}}=[{{include.content}}]&{{include.content1}}=[code]</div>
+
+<p>See <a href="https://www.hl7.org/fhir/STU3/search.html#string" target="_blank">string</a> and <a href="https://www.hl7.org/fhir/STU3/search.html#token" target="_blank">token</a> for details on this parameters.</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.resource}}?{{include.content}}={{include.example}}&{{include.content1}}={{include.example1}}
+</span></code>
+Return all {{include.resource}} resources with {{include.text1}} of {{include.text2}} and {{include.text3}} of {{include.text4}}.</pre>
+</div>
+
+
+
+
+<!--
+<div markdown="span" class="alert alert-success" role="alert">
+GET [baseUrl]/{{include.resource}}?{{include.content}}=[system]|[code] 
+
+
+
+<br> GET [baseUrl]/{{include.resource}}?{{include.content}}=[code]</div>
+
+<p>See <a href="https://www.hl7.org/fhir/STU3/search.html#token" target="_blank">token</a> for details on this parameter.</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.resource}}?{{include.content}}={{include.example}}
+</span></code>
+Return all {{include.resource}} resources with {{include.text1}} of {{include.text2}}. </pre>
+</div>
+-->

@@ -104,7 +104,7 @@ Systems SHOULD support the following search combinations:
 
 {% include custom/search.patient.html para="2.1.2." content="Immunization" %}
 
-{% include custom/search.status.plus.html para="2.1.3." name="status" content="Immunization" options="completed" selected="completed" %}
+{% include custom/search.status.plus.html para="2.1.3." name="status" content="Immunization" options="completed | entered-in-error" selected="completed" %}
 
 {% include custom/search.vaccinationprocedure.html para="2.1.4." name="vaccination-procedure-code" content="Immunization" options="completed" selected="completed" %}
 

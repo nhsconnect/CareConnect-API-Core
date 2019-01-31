@@ -139,19 +139,30 @@ Client systems SHALL provide at least two parameters of differing types, unless 
 
 <!-- include custom/search.nopat.string.html para="2.1.1." resource="Patient" content="address-postalcode"  example="NG10%201ZZ" text1="Post Code" text2="NG10 1ZZ" -->
 
-{% include custom/search.nopat.date.plus.html para="2.1.1." content="Patient" name="birthdate" %}
+
 
 <!-- include custom/search.nopat.string.html para="2.1.3." resource="Patient" content="email"  example="bernie.kanfeld@chumhum.com" text1="email address" text2="bernie.kanfeld@chumhum.com" % -->
 
-{% include custom/search.nopat.string.html para="2.1.2." resource="Patient" content="family"  example="kanfeld" text1="surname" text2="Kanfeld" %}
+{% include custom/search.nopat.identifier.html para="2.1.1." resource="Patient" content="identifier" subtext="NHS Number, Hospital Number, etc" example="https://fhir.nhs.uk/Id/nhs-number|9876543210" text1="NHS Number" text2="9876543210" %}
 
-{% include custom/search.nopat.token.html para="2.1.3." resource="Patient" content="gender"  example="female" text1="Administrative Sex" text2="female" %}
+{% include custom/search.nopat.string.token.html para="2.1.2." resource="Patient" content="name" content1="gender" example="bernie%20kanfeld" text1="name" text2="Bernie Kanfeld" example1="female" text3="Administrative Sex" text4="female" %}
 
-{% include custom/search.nopat.string.html para="2.1.4." resource="Patient" content="given"  example="bernie" text1="forename" text2="Bernie" %}
+{% include custom/search.nopat.string.date.html para="2.1.3." resource="Patient" content="name" content1="birthdate" example="bernie%20kanfeld" text1="name" text2="Bernie Kanfeld" example1="female" text3="Administrative Sex" text4="female" %}
 
-{% include custom/search.nopat.identifier.html para="2.1.5." resource="Patient" content="identifier" subtext="NHS Number, Hospital Number, etc" example="https://fhir.nhs.uk/Id/nhs-number|9876543210" text1="NHS Number" text2="9876543210" %}
+{% include custom/search.nopat.string.token.html para="2.1.4." resource="Patient" content="family" content1="gender" example="kanfeld" text1="surname" text2="Kanfeld" example1="female" text3="Administrative Sex" text4="female" %}
 
-{% include custom/search.nopat.string.html para="2.1.6." resource="Patient" content="name"  example="bernie%20kanfeld" text1="name" text2="Bernie Kanfeld" %}
+{% include custom/search.nopat.string.token.html para="2.1.5." resource="Patient" content="given" content1="gender" example="bernie" text1="forename" text2="Bernie" example1="female" text3="Administrative Sex" text4="female" %}
+
+
+<!--  include custom/search.nopat.token.html para="2.1.6." resource="Patient" content="gender"  example="female" text1="Administrative Sex" text2="female" -->
+
+<!-- include custom/search.nopat.string.html para="2.1.7." resource="Patient" content="given"  example="bernie" text1="forename" text2="Bernie" -->
+
+
+<!-- include custom/search.nopat.string.html para="2.1.8." resource="Patient" content="family"  example="kanfeld" text1="surname" text2="Kanfeld" -->
+
+<!-- include custom/search.nopat.date.plus.html para="2.1.7." content="Patient" name="birthdate" -->
+
 
 <!-- include custom/search.nopat.string.html para="2.1.9." resource="Patient" content="phone"  example="07999123456" text1="phone number" text2="07999 123456" -->
 

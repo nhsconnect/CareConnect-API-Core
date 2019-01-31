@@ -1,0 +1,14 @@
+<h4 id="{{include.content}}">{{include.para}} {{include.content}} + {{include.content1}}</h4>
+
+<div markdown="span" class="alert alert-success" role="alert">
+GET [baseUrl]/{{include.resource}}?{{include.content}}=[{{include.content}}]&{{include.content1}}=[date]</div>
+
+<p>See <a href="https://www.hl7.org/fhir/STU3/search.html#string" target="_blank">string</a> and <a href="https://www.hl7.org/fhir/STU3/search.html#date" target="_blank">date</a> for details on these parameters. ‘{{include.content1}}’ can be used multiple times as a search parameter</p>
+
+<div class="language-http highlighter-rouge">
+<pre class="highlight"><code><span class="err">GET [baseUrl]/{{include.resource}}?{{include.content}}={{include.example}}&{{include.content1}}=ge2010-01-01&amp;{{include.content1}}=le2011-12-31
+</span></code>
+Return all {{include.resource}} resources with {{include.text1}} of {{include.text2}} and that have a {{include.content1}} greater than or equal to 1st Jan 2010 and {{include.content1}} less than or equal to 31st Dec 2011.</pre>
+</div>
+
+
