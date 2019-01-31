@@ -1,9 +1,9 @@
 ---
-title: Entities | Organisation
+title: Entities | Organization
 keywords: usecase, Organization
 tags: [rest, fhir, identification,api]
 sidebar: accessrecord_rest_sidebar
-permalink: api_entity_organisation.html
+permalink: api_entity_organization.html
 summary: A formally or informally recognized grouping of people or organizations formed for the purpose of achieving some form of collective action. Includes companies, institutions, corporations, departments, community groups, healthcare practice groups, etc.
 ---
 {% include custom/search.warnbanner.html %}
