@@ -122,7 +122,7 @@ Specific server search capabilities are described in detail in each of the resou
     <td></td>
 </tr>
 <tr>
-    <td><code class="highlighter-rouge"><a href="api_entity_organisation.html">Organization</a></code></td>
+    <td><code class="highlighter-rouge"><a href="api_entity_organization.html">Organization</a></code></td>
     <td>identifier, name, address</td>
     <td></td>
     <td></td>
