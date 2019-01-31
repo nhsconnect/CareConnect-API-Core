@@ -90,7 +90,7 @@ entries:
       url: /api_diagnostics_observation.html
       output: web
     - title: Organization
-      url: /api_entity_organisation.html
+      url: /api_entity_organization.html
       output: web
     - title: Patient
       url: /api_entity_patient.html
