@@ -124,11 +124,11 @@ The API intends to mandate a minimal set of the query mechanism to ensure the ma
 - <b>MUST</b> – these search parameters MUST be implemented for the specified resource type
 - <b>SHOULD</b> – these search parameters are expected to be implemented, if the data to support the query is present in the host system
 
-Additional search parameters can be added to reflect local requirements.
+Additional search parameters MAY be added to reflect local requirements.
 
 To be conformant, provider systems are required to implement all of the MUST parameters.
 
-All search parameters must be described in the FHIR CapabilityStatement.
+All search parameters MUST be described in the FHIR CapabilityStatement.
 
 
 
