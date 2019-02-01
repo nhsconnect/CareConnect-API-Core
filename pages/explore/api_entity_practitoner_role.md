@@ -1,7 +1,7 @@
 ---
 title: Individuals | Practitioner Role
 keywords: usecase, Practitioner, PractionerRole, Role
-tags: [rest, fhir, identification,api]
+tags: [fhir]
 sidebar: accessrecord_rest_sidebar
 permalink: api_entity_practitioner_role.html
 summary: A specific set of Roles/Locations/specialties/services that a practitioner may perform at an organisation for a period of time.

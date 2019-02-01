@@ -1,7 +1,7 @@
 ---
 title:  Conformance Overview
 keywords: getcarerecord, structured, rest, resource
-tags: [rest,fhir,api]
+tags: [conformance]
 sidebar: foundations_sidebar
 permalink: conformance_coreapi.html
 summary: "Overview of the Conformance section"

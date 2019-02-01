@@ -206,6 +206,9 @@ entries:
     - title: Introduction
       url: /tag_overview.html
       output: web
+    - title: Conformance
+      url: /tag_conformance.html
+      output: web
     - title: FHIR&reg;
       url: /tag_fhir.html
       output: web

@@ -1,7 +1,7 @@
 ---
 title: Medication | Medication Request
 keywords: usecase, medication, order, request, medication request
-tags: [fhir, rest,medication,api]
+tags: [fhir]
 sidebar: foundations_sidebar
 permalink: api_medication_medicationrequest.html
 summary: An order for both supply of the medication and the instructions for administration of the medication to a patient. The resource is called "MedicationRequest" rather than "MedicationPrescription" to generalize the use across inpatient and outpatient settings as well as for care plans, etc.

@@ -1,7 +1,7 @@
 ---
 title: Individuals | Patient
 keywords: getcarerecord, structured, rest, patient
-tags: [rest, fhir, identification,api]
+tags: [fhir]
 sidebar: accessrecord_rest_sidebar
 permalink: api_entity_patient.html
 summary: Demographics and other administrative information about an individual receiving care or other health-related services.

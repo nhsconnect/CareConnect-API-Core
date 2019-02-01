@@ -1,7 +1,7 @@
 ---
 title: Management | Encounter
 keywords: usecase, encounter
-tags: [rest, fhir, workflow,api]
+tags: [fhir]
 sidebar: foundations_sidebar
 permalink: api_management_encounter.html
 summary: An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient.
