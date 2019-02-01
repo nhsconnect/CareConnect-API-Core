@@ -49,11 +49,11 @@ In order to be a compliant FHIR server, client systems need to expose a valid FH
 
 ### 1.2 Profile Interaction Summary ###
 
-1. All servers MUST make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read </a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search </a> interactions for the Profiles the server chooses to support.
-2. All servers SHOULD make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread </a> and <a href="http://hl7.org/fhir/STU3/http.html#history-instance">history-instance </a> interactions for the Profiles the server chooses to support.
+1. All servers MUST make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read </a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search </a> interactions for the resources the server chooses to support.
+2. All servers SHOULD make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread </a> and <a href="http://hl7.org/fhir/STU3/http.html#history-instance">history-instance </a> interactions for the resources the server chooses to support.
 
 
-Summary of the Care Connect Core API search criteria
+<b>Summary of the Care Connect Core API search criteria</b>
 
 Specific server search capabilities are described in detail in each of the resource sections.
 
@@ -63,43 +63,36 @@ Specific server search capabilities are described in detail in each of the resou
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
 	<th style="width:10%;">Resource Profile</th>
-    <th style="width:55%;">Supported Searches</th>
+    <th style="width:70%;">Supported Searches</th>
     <th style="width:20%;">Supported Includes</th>
-    <th style="width:15%;">Supported Modifiers</th>
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_clinical_allergyintolerance.html">AllergyIntolerance </a></code></td>
     <td>patient, patient + code, patient + clinical-status, patient + verification-status</td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_clinical_condition.html">Condition </a></code></td>
     <td>patient, patient + clinical-status, patient + category</td>
     <td></td>
-    <td></td>
 </tr>
 <tr>
   <td><code class="highlighter-rouge"><a href="api_management_encounter.html">Encounter</a></code></td>
     <td>patient, patient + date, patient + type, patient + type + date</td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
 	<td><code class="highlighter-rouge"><a href="api_medication_immunization.html">Immunization</a></code></td>
     <td>patient, patient + vaccination-procedure-code, patient + notgiven, patient + status</td>
     <td></td>
-    <td></td>
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_entity_location.html">Location</a></code></td>
     <td>identifier, name, address</td>
     <td></td>
-    <td></td>
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_medication_medication.html">Medication </a></code></td>
-    <td></td>
     <td></td>
     <td></td>
 </tr>
@@ -107,52 +100,42 @@ Specific server search capabilities are described in detail in each of the resou
   <td><code class="highlighter-rouge"><a href="api_medication_medicationrequest">MedicationRequest</a></code></td>
     <td>patient, patient + status</td>
     <td>MedicationRequest.medication</td>
-    <td></td>
 </tr>
 <tr>
 	<td><code class="highlighter-rouge"><a href="api_medication_medicationstatement">MedicationStatement</a></code></td>
     <td>patient, patient + status</td>
     <td>MedicationStatement.medication</td>
-    <td></td>
 </tr>
 <tr>
 	<td><code class="highlighter-rouge"><a href="api_diagnostics_observation.html">Observation</a></code></td>
     <td>patient, patient + date, patient + code, patient + date + code</td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_entity_organization.html">Organization</a></code></td>
     <td>identifier, name, address</td>
     <td></td>
-    <td></td>
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_entity_patient.html">Patient </a></code></td>
     <td>identifier, given, family, birthdate, gender, name, name + gender, name + birthdate, family + gender, given + gender</td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
   <td><code class="highlighter-rouge"><a href="api_entity_practitioner.html">Practitioner</a></code></td>
     <td>identifier, name</td>
     <td></td>
-    <td></td>
 </tr>
 <tr>
 	<td><code class="highlighter-rouge"><a href="api_entity_practitioner_role.html">PractitionerRole</a></code></td>
     <td>organization, practitioner</td>
-    <td></td>
     <td></td>
 </tr>
 <tr>
 	<td><code class="highlighter-rouge"><a href="api_clinical_procedure.html">Procedure</a></code></td>
     <td>patient, patient + date</td>
     <td></td>
-    <td></td>
 </tr>
-
-
 </table>
 
 
@@ -167,7 +150,7 @@ FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability S
 
 ### 1.4 NHS Number ###
 
-Only verified NHS Number SHALL be used with CareConnect profiles. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
+Only verified NHS Number MUST be used with the Care Connect Core API. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
 
 
 

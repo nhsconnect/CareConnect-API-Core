@@ -148,7 +148,7 @@ This section looks at the Care Connect profile API's covered within this impleme
 <th>&nbsp;</th>
 </tr>
 <tr>
-<td><a href="api_foundation_capability.html">Capability Statement</a></td>
+<td><a href="api_foundation_capability.html">CapabilityStatement</a></td>
 <td></td>
 <td>&nbsp;</td>
 </tr>
