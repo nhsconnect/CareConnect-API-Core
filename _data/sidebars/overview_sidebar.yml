@@ -209,6 +209,9 @@ entries:
     - title: Conformance
       url: /tag_conformance.html
       output: web
+    - title: Development
+      url: /tag_development.html
+      output: web
     - title: FHIR&reg;
       url: /tag_fhir.html
       output: web
@@ -221,9 +224,6 @@ entries:
   #  - title: Design
   #    url: /tag_design.html
   #    output: web
-    - title: Development
-      url: /tag_development.html
-      output: web
     - title: Support
       url: /tag_support.html
       output: web
