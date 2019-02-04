@@ -9,7 +9,9 @@ summary: A capability statement is a set of capabilities of a FHIR Server that m
 
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.reference.html resource="" page="" fhirname="Capability Statement"  fhirlink="capabilitystatement.html" content="-" userlink="-" %}
+<!-- include custom/fhir.reference.html resource="" page="" fhirname="Capability Statement"  fhirlink="capabilitystatement.html" content="-" userlink="-" -->
+
+{% include custom/fhir.STU3.reference.noHL7UK.html resource="CapabilityStatement"  fhirname="CapabilityStatement" fhirlink="capabilitystatement.html" content="" userlink="" %}
 
 
 ## 1. Read ##
