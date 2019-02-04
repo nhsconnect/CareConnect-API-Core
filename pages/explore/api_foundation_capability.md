@@ -34,7 +34,7 @@ For details of this interaction - see the [HL7 FHIR STU3 RESTful API](https://ww
 <!--For details of this interaction - see the [HL7 FHIR STU3 RESTful API](http.html#capabilities){:target="_blank"}-->
 
 
-All requests SHALL contain a valid ‘Authorization’ header and SHALL contain an ‘Accept’ header with at least one of the following application/fhir+json or application/fhir+xml.
+All requests MUST contain a valid ‘Authorization’ header and MUST contain an ‘Accept’ header with at least one of the following application/fhir+json or application/fhir+xml.
 
 ## 2. Example ##
 
