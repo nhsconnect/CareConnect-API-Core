@@ -29,7 +29,7 @@ Search for all problems and health concerns for a patient. Fetches a bundle of a
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Condition" link="condition.html#search" %}
+{% include custom/search.parameters.combinations.html resource="Condition" link="condition.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -80,12 +80,41 @@ Search for all problems and health concerns for a patient. Fetches a bundle of a
 </tr>
 -->
 
+{% include custom/search.parameters.combos.html resource="Condition"  link="condition.html#search" %}
+
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:35%;">Parameter Combinations</th>
+    <th style="width:25%;">Type</th>
+    <th style="width:40%;">Conformance</th>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + clinical-status</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>SHOULD</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + category</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>SHOULD</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + code</code></td>
+    <td><code class="highlighter-rouge">reference +token</code></td>
+    <td>SHOULD</td>
+</tr>
+</table>
+
+This section outlines the search parameter syntax used, with some examples provided.
+
+<!--
 Systems SHOULD support the following search combinations:
 
 * patient + clinical-status
 * patient + category
 * patient + code
-
+-->
 <!--
 {% include custom/search.date.plus.html para="2.1.1." content="Condition" name="asserted-date" %}
 -->

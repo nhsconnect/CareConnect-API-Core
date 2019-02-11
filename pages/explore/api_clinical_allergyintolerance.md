@@ -32,7 +32,7 @@ Search for all allergies for a patient. Fetches a bundle of all `AllergyIntolera
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="AllergyIntolerance"  link="allergyintolerance.html#search" %}
+{% include custom/search.parameters.combinations.html resource="AllergyIntolerance"  link="allergyintolerance.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -82,6 +82,9 @@ Search for all allergies for a patient. Fetches a bundle of all `AllergyIntolera
 </tr>
 -->
 
+{% include custom/search.parameters.combos.html resource="AllergyIntolerance"  link="allergyintolerance.html#search" %}
+
+<!--
 Systems MUST support the following search combinations:
 
 * patient + verification-status
@@ -90,6 +93,32 @@ Systems SHOULD support the following search combinations:
 
 * patient + code
 * patient + clinical-status
+-->
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:35%;">Parameter Combinations</th>
+    <th style="width:25%;">Type</th>
+    <th style="width:40%;">Conformance</th>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + verification-status</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + code</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>SHOULD</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + clinical-status</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>SHOULD</td>
+</tr>
+</table>
+
+This section outlines the search parameter syntax used, with some examples provided.
 
 {% include custom/search.status.plus.html para="2.1.1." name="clinical-status" content="AllergyIntolerance" options="active | inactive | resolved" selected="active" %}
 

@@ -24,19 +24,22 @@ Note: The individual Care Connect Core profiles identify the structural constrai
 ### 1.1 Care Connect Core API Requirements ###
 
 - MUST support HL7 FHIR STU3 version 3.0.1.
-- MUST support the CareConnect Patient resource profile.
-- MUST support at least one additional resource profile from the list of CareConnect Profiles
 - MUST Implement REST behavior according to the [FHIR specification]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/http.html){:target="_blank"}
 - Resources MUST identify the CareConnect profile supported as part of the [FHIR Base Resource](https://hl7.org/fhir/STU3/resource-definitions.html#Resource.meta){:target="_blank"}
-- MUST support XML **or** JSON formats for all CareConnect API interactions and SHOULD support both formats.
+- MUST support JSON format for all CareConnect API interactions and SHOULD support XML format.
 - MUST declare a CapabilityStatement identifying the list of profiles, operations and search parameters supported.
   - In order to be a compliant FHIR server, Servers <!--client systems--> MUST expose a valid FHIR [CapabilityStatement]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/capabilitystatement.html){:target="_blank"} instance. See the [capabilities](api_foundation_capability.html) interaction.
   - This MUST conform to the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-ServerRequirements-CapabilityStatement-1v0.2.xml){:target="_blank"}.
 
 <!--  with the See also the Care Connect [Core API CapabilityStatement Requirements](api_foundation_capability.html) profile. -->
+<!-- 
+- MUST support the CareConnect Patient resource profile.
+- MUST support at least one additional resource profile from the list of CareConnect Profiles
+- MUST support XML **or** JSON formats for all CareConnect API interactions and SHOULD support both formats.
+ MUST Implement REST behavior according to the [FHIR specification]({{ site.hl7_baseurl.stu3 }}http.html){:target="_blank"}
+-->
 
 
-<!-- MUST Implement REST behavior according to the [FHIR specification]({{ site.hl7_baseurl.stu3 }}http.html){:target="_blank"} -->
 
 <!--
 ### 1.2 FHIR Conformance ###
@@ -49,8 +52,10 @@ In order to be a compliant FHIR server, client systems need to expose a valid FH
 
 ### 1.2 Profile Interaction Summary ###
 
-1. All servers MUST make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read </a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search </a> interactions for the resources the server chooses to support.
-2. All servers SHOULD make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread </a> and <a href="http://hl7.org/fhir/STU3/http.html#history-instance">history-instance </a> interactions for the resources the server chooses to support.
+All servers MUST make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read </a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search </a> interactions for the resources the server chooses to support.
+
+<!--
+All servers SHOULD make available the <a href="http://hl7.org/fhir/STU3/http.html#vread">vread </a> and <a href="http://hl7.org/fhir/STU3/http.html#history-instance">history-instance </a> interactions for the resources the server chooses to support.-->
 
 
 <b>Summary of the Care Connect Core API search criteria</b>
@@ -88,7 +93,7 @@ Specific server search capabilities are described in detail in each of the resou
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_entity_location.html">Location</a></code></td>
-    <td>identifier, name, address</td>
+    <td>identifier, name, address, address-city, address-postalcode</td>
     <td></td>
 </tr>
 <tr>
@@ -113,7 +118,7 @@ Specific server search capabilities are described in detail in each of the resou
 </tr>
 <tr>
     <td><code class="highlighter-rouge"><a href="api_entity_organization.html">Organization</a></code></td>
-    <td>identifier, name, address</td>
+     <td>identifier, name, address, address-city, address-postalcode</td>
     <td></td>
 </tr>
 <tr>
@@ -150,8 +155,10 @@ FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability S
 
 ### 1.4 NHS Number ###
 
-Only verified NHS Number MUST be used with the Care Connect Core API. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
-
+NHS Number SHOULD be used with the Care Connect Core API. If the NHS Number is used, this MUST be a verified NHS Number. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
+<!-- 
+ MUST be used with the Care Connect Core API. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
+-->
 
 
 <!-- include custom/contribute.html content="Get in touch with us to improve the Prerequisites." -->

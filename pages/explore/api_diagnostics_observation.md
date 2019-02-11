@@ -32,7 +32,7 @@ Fetches a bundle of all `Observation` resources for the specified patient.
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Observation" link="observation.html#search" %}
+{% include custom/search.parameters.combinations.html resource="Observation" link="observation.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -74,6 +74,11 @@ Fetches a bundle of all `Observation` resources for the specified patient.
 </tr>
 </table>
 
+{% include custom/search.parameters.combos.html resource="Observation"  link="observation.html#search" %}
+
+<!--
+This section outlines the search parameter syntax used, with some examples provided.
+
 Systems MUST support the following search combinations:
 
  * patient + date
@@ -82,6 +87,39 @@ Systems MUST support the following search combinations:
 
  * patient + code
  * patient + code + date
+-->
+
+
+
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:25%;">Parameter Combinations</th>
+    <th style="width:30%;">Type</th>
+    <th style="width:5%;">Conformance</th>
+    <th style="width:35%;">Modifiers</th>
+</tr>
+<tr>
+     <td><code class="highlighter-rouge">patient + date</code></td>
+    <td><code class="highlighter-rouge">reference + date</code></td>
+    <td>MUST</td>
+    <td>date modifiers ‘ge’,‘le’,’gt’,’lt’</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + code</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>SHOULD</td>
+    <td></td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + code + date</code></td>
+    <td><code class="highlighter-rouge">reference + token + date</code></td>
+    <td>SHOULD</td>
+    <td>date modifiers ‘ge’,‘le’,’gt’,’lt’</td>
+</tr>
+</table>
+
+This section outlines the search parameter syntax used, with some examples provided.
 
 
 <!-- | `subject` | `reference` | The subject that the observation is about| | Observation.subject (Patient) |

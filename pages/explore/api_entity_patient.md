@@ -31,7 +31,7 @@ Fetches a bundle of all `Patient` resources for the specified patient or search 
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Patient" link="patient.html#search" %}
+{% include custom/search.parameters.combinations.html resource="Patient" link="patient.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -112,12 +112,49 @@ Fetches a bundle of all `Patient` resources for the specified patient or search 
 -->
 </table>
 
+
+{% include custom/search.parameters.combos.html resource="Patient"  link="patient.html#search" %}
+
+<!--
 Systems MUST support the following search combinations:
 
 * name + gender
 * name + birthdate
 * family + gender
 * given + gender
+-->
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:35%;">Parameter Combinations</th>
+    <th style="width:25%;">Type</th>
+    <th style="width:40%;">Conformance</th>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">name + gender</code></td>
+    <td><code class="highlighter-rouge">string + token</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">name + birthdate</code></td>
+    <td><code class="highlighter-rouge">string + date</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">family + gender</code></td>
+    <td><code class="highlighter-rouge">string + token</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">given + gender</code></td>
+    <td><code class="highlighter-rouge">string + token</code></td>
+    <td>MUST</td>
+</tr>
+</table>
+
+This section outlines the search parameter syntax used, with some examples provided.
+
+
 
 
 

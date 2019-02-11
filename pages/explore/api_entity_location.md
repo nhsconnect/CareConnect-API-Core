@@ -45,6 +45,20 @@ Fetches a bundle of all `Location` resources for the specified search criteria.
     <td>Location.address</td>
 </tr>
 <tr>
+    <td><code class="highlighter-rouge">address-city</code></td>
+    <td><code class="highlighter-rouge">string</code></td>
+    <td>A city specified in an address</td>
+    <td>SHOULD</td>
+    <td>Location.address.city</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">address-postalcode</code></td>
+    <td><code class="highlighter-rouge">string</code></td>
+    <td>A postal code specified in an address</td>
+    <td>SHOULD</td>
+    <td>Location.address.postalCode</td>
+</tr>
+<tr>
     <td><code class="highlighter-rouge">identifier</code></td>
     <td><code class="highlighter-rouge">token</code></td>
     <td>Any identifier for the location (e.g. SDS/ODS code)</td>

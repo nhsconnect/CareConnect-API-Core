@@ -30,7 +30,7 @@ Fetches a bundle of all `MedicationStatement` resources for the specified patien
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="MedicationStatement" link="medicationstatement.html#search" %}
+{% include custom/search.parameters.combinations.html resource="MedicationStatement" link="medicationstatement.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -65,13 +65,35 @@ Fetches a bundle of all `MedicationStatement` resources for the specified patien
 </tr>
 </table>
 
+{% include custom/search.parameters.combos.html resource="MedicationStatement"  link="medicationstatement.html#search" %}
+
+<!--
 Systems SHOULD support the following search combinations:
 
  * patient + status
+-->
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:35%;">Parameter Combinations</th>
+    <th style="width:25%;">Type</th>
+    <th style="width:40%;">Conformance</th>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + status</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>MUST</td>
+</tr>
+</table>
+
+{% include note.html content="If an external reference to Medication is used, the server as a minimum SHOULD support the `include` parameter capability for MedicationRequest.medication and MedicationStatement.medication searches." %}
+
+This section outlines the search parameter syntax used, with some examples provided.
 
 
+<!--
 If an external reference to Medication is used, the server as a minimum SHOULD support the `include` parameter capability for MedicationRequest.medication and MedicationStatement.medication searches.
-
+-->
 
 
 <!-- include custom/search.date.plus.html para="2.1.1." content="MedicationStatement" name="effective" -->

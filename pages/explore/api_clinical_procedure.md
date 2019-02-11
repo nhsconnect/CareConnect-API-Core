@@ -29,7 +29,7 @@ Fetches a bundle of all `Procedure` resources for the specified patient.
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Procedure" link="procedure.html#search" %}
+{% include custom/search.parameters.combinations.html resource="Procedure" link="procedure.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -64,9 +64,35 @@ Fetches a bundle of all `Procedure` resources for the specified patient.
 -->
 </table>
 
+{% include custom/search.parameters.combos.html resource="Procedure"  link="procedure.html#search" %}
+
+<!--
 Systems MUST support the following search combinations:
 
 * patient + date
+-->
+
+
+
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:25%;">Parameter Combinations</th>
+    <th style="width:30%;">Type</th>
+    <th style="width:5%;">Conformance</th>
+    <th style="width:35%;">Modifiers</th>
+</tr>
+<tr>
+     <td><code class="highlighter-rouge">patient + date</code></td>
+    <td><code class="highlighter-rouge">reference + date</code></td>
+    <td>MUST</td>
+    <td>date modifiers ‘ge’,‘le’,’gt’,’lt’</td>
+</tr>
+</table>
+
+This section outlines the search parameter syntax used, with some examples provided.
+
+
 
 
 {% include custom/search.date.html para="2.1.1." content="Procedure" %}

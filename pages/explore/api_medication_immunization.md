@@ -30,7 +30,7 @@ Search for all immunization resources for a patient. Fetches a bundle of all `Im
 
 ### 2.1. Search Parameters ###
 
-{% include custom/search.parameters.html resource="Immunization" link="immunization.html#search" %}
+{% include custom/search.parameters.combinations.html resource="Immunization" link="immunization.html#search" %}
 
 <table style="min-width:100%;width:100%">
 <tr id="clinical">
@@ -79,6 +79,11 @@ Search for all immunization resources for a patient. Fetches a bundle of all `Im
     <td>Immunization.date</td>
 </tr>
 -->
+
+
+{% include custom/search.parameters.combos.html resource="Immunization"  link="immunization.html#search" %}
+
+<!--
 Systems MUST support the following search combinations:
 
 * patient + notgiven
@@ -87,6 +92,33 @@ Systems MUST support the following search combinations:
 Systems SHOULD support the following search combinations:
 
 * patient + vaccination-procedure-code
+-->
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:40%;">Parameter Combinations</th>
+    <th style="width:25%;">Type</th>
+    <th style="width:35%;">Conformance</th>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + notgiven</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + status</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">patient + vaccination-procedure-code</code></td>
+    <td><code class="highlighter-rouge">reference + token</code></td>
+    <td>SHOULD</td>
+</tr>
+</table>
+
+This section outlines the search parameter syntax used, with some examples provided.
+
 
 
 <!--
