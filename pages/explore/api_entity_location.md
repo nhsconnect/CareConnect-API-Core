@@ -8,7 +8,7 @@ summary: Details and position information for a physical place where services ar
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Location" page="CareConnect-Location-1" fhirname="Location" fhirlink="location.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Location" page="CareConnect-Location-1" fhirname="Location" fhirlink="location.html" content="User Stories" userlink="https://nhsconnect.github.io/CareConnectAPI/engage_michaelsstory.html" %}
 
 ## 1. Read ##
 
@@ -90,9 +90,15 @@ Fetches a bundle of all `Location` resources for the specified search criteria.
 
 {% include custom/search.nopat.string.html para="2.1.1." resource="Location" content="address"  example="York" text1="address string" text2="York" %}
 
-{% include custom/search.nopat.identifier.html para="2.1.2." resource="Location" content="identifier" subtext="SDS/ODS Code" example="https://fhir.nhs.uk/Id/ods-site-code|RTG08" text1="NHS Trust Site" text2="RTG08 (Long Eaton Clinic)" %}
+{% include custom/search.nopat.string.html para="2.1.2." resource="Location" content="address-city"  example="London" text1="city" text2="London" %}
 
-{% include custom/search.nopat.string.html para="2.1.3." resource="Location" content="name"  example="York Hospital" text1="name string" text2="York Hospital" %}
+{% include custom/search.nopat.string.html para="2.1.3." resource="Location" content="address-postcode"  example="N19%205NF" text1="postcode" text2="N19 5NF" %}
+
+
+
+{% include custom/search.nopat.identifier.html para="2.1.4." resource="Location" content="identifier" subtext="SDS/ODS Code" example="https://fhir.nhs.uk/Id/ods-site-code|RTG08" text1="NHS Trust Site" text2="RTG08 (Long Eaton Clinic)" %}
+
+{% include custom/search.nopat.string.html para="2.1.5." resource="Location" content="name"  example="York Hospital" text1="name string" text2="York Hospital" %}
 
 {% include custom/search.response.html resource="Location" %}
 

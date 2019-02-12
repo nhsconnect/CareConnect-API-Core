@@ -11,7 +11,7 @@ summary: Measurements and simple assertions made about a patient, device or othe
 
 <!-- include custom/fhir.referencemin.html resource="Observation" page="CareConnect-Observation-1" fhirname="Observation" fhirlink="observation.html" content="User Stories" -->
 
-{% include custom/fhir.STU3.reference.html resource="Observation" page="CareConnect-Observation-1" fhirname="Observation" fhirlink = "observatione.html" content="" userlink="" %}
+{% include custom/fhir.STU3.reference.html resource="Observation" page="CareConnect-Observation-1" fhirname="Observation" fhirlink = "observation.html" content="" userlink="" %}
 
 
 ## 1. Read ##

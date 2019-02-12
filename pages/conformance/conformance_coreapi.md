@@ -25,7 +25,7 @@ Note: The individual Care Connect Core profiles identify the structural constrai
 
 - MUST support HL7 FHIR STU3 version 3.0.1.
 - MUST Implement REST behavior according to the [FHIR specification]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/http.html){:target="_blank"}
-- Resources MUST identify the CareConnect profile supported as part of the [FHIR Base Resource](https://hl7.org/fhir/STU3/resource-definitions.html#Resource.meta){:target="_blank"}
+- Resources MUST identify the CareConnect profile supported as part of the [FHIR Base Resource](https://hl7.org/fhir/STU3/resource-definitions.html#Resource.meta){:target="_blank"} i.e. populate the FHIR `meta.profile` attribute for each instance.
 - MUST support JSON format for all CareConnect API interactions and SHOULD support XML format.
 - MUST declare a CapabilityStatement identifying the list of profiles, operations and search parameters supported.
   - In order to be a compliant FHIR server, Servers <!--client systems--> MUST expose a valid FHIR [CapabilityStatement]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/capabilitystatement.html){:target="_blank"} instance. See the [capabilities](api_foundation_capability.html) interaction.

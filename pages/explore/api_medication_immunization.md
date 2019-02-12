@@ -8,7 +8,7 @@ summary: Describes the event of a patient being administered a vaccination or a 
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Immunization" page="CareConnect-Immunization-1" fhirname="Immunization" fhirlink="immunization.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Immunization" page="CareConnect-Immunization-1" fhirname="Immunization" fhirlink="immunization.html" content="User Stories" userlink="https://nhsconnect.github.io/CareConnectAPI/engage_michaelsstory.html" %}
 
 
 

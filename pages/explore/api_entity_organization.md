@@ -8,7 +8,7 @@ summary: A formally or informally recognized grouping of people or organizations
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Organization" page="CareConnect-Organization-1" fhirname="Organization" fhirlink="organization.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Organization" page="CareConnect-Organization-1" fhirname="Organization" fhirlink="organization.html" content="User Stories" userlink="https://nhsconnect.github.io/CareConnectAPI/engage_michaelsstory.html" %}
 
 ## 1. Read ##
 
@@ -78,9 +78,15 @@ Fetches a bundle of all `Organization` resources for the specified search criter
 
 {% include custom/search.nopat.string.html para="2.1.1." resource="Organization" content="address"  example="York" text1="address string" text2="York" %}
 
-{% include custom/search.nopat.identifier.html para="2.1.2." resource="Organization" content="identifier" subtext="SDS/ODS Code" example="https://fhir.nhs.uk/Id/ods-organization-code|RTG" text1="NHS Organisation" text2="RTG (Derby Teaching Hospitals NHS Trust)" %}
+{% include custom/search.nopat.string.html para="2.1.2." resource="Organization" content="address-city"  example="London" text1="city" text2="London" %}
 
-{% include custom/search.nopat.string.html para="2.1.3." resource="Organization" content="name"  example="Derby%20Teaching%20Hospitals%20NHS%20Trust" text1="Name" text2="Derby Teaching Hospitals NHS Trust" %}
+{% include custom/search.nopat.string.html para="2.1.3." resource="Organization" content="address-postcode"  example="N19%205NF" text1="postcode" text2="N19 5NF" %}
+
+
+
+{% include custom/search.nopat.identifier.html para="2.1.4." resource="Organization" content="identifier" subtext="SDS/ODS Code" example="https://fhir.nhs.uk/Id/ods-organization-code|RTG" text1="NHS Organisation" text2="RTG (Derby Teaching Hospitals NHS Trust)" %}
+
+{% include custom/search.nopat.string.html para="2.1.5." resource="Organization" content="name"  example="Derby%20Teaching%20Hospitals%20NHS%20Trust" text1="Name" text2="Derby Teaching Hospitals NHS Trust" %}
 
 
 {% include custom/search.response.html resource="Organization" %}

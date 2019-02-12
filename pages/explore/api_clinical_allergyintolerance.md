@@ -11,7 +11,7 @@ summary: Risk of harmful or undesirable, physiological response which is unique 
 <!-- include custom/fhir.referencemin.html resource="[AllergyIntolerance](https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1)" userlink="" page="" fhirname="AllergyIntolerance" fhirlink="[AllergyIntolerance](https://www.hl7.org/fhir/STU3/AllergyIntolerance.html)" content="[Michael's Story](engage_michaelsstory.html)" userlink="" %} -->
 
 
-{% include custom/fhir.STU3.reference.html resource="Allergy Intolerance" page="CareConnect-AllergyIntolerance-1" fhirname="AllergyIntolerance" fhirlink = "allergyintolerance.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Allergy Intolerance" page="CareConnect-AllergyIntolerance-1" fhirname="AllergyIntolerance" fhirlink = "allergyintolerance.html" content="User Stories" userlink="https://nhsconnect.github.io/CareConnectAPI/engage_michaelsstory.html" %}
 
 
 ## 1. Read ##

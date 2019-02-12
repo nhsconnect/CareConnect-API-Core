@@ -8,7 +8,7 @@ summary: An action that is or was performed on a patient. This can be a physical
 ---
 {% include custom/search.warnbanner.html %}
 
-{% include custom/fhir.STU3.reference.html resource="Procedure" page="CareConnect-Procedure-1" fhirname="Procedure" fhirlink="procedure.html" content="User Stories" userlink="engage_michaelsstory.html" %}
+{% include custom/fhir.STU3.reference.html resource="Procedure" page="CareConnect-Procedure-1" fhirname="Procedure" fhirlink="procedure.html" content="User Stories" userlink="https://nhsconnect.github.io/CareConnectAPI/engage_michaelsstory.html" %}
 
 
 ## 1. Read ##
