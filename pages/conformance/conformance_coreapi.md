@@ -29,7 +29,7 @@ Note: The individual Care Connect Core profiles identify the structural constrai
 - MUST support JSON format for all CareConnect API interactions and SHOULD support XML format.
 - MUST declare a CapabilityStatement identifying the list of profiles, operations and search parameters supported.
   - In order to be a compliant FHIR server, Servers <!--client systems--> MUST expose a valid FHIR [CapabilityStatement]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/capabilitystatement.html){:target="_blank"} instance. See the [capabilities](api_foundation_capability.html) interaction.
-  - This MUST conform to the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-ServerRequirements-CapabilityStatement-1v0.2.xml){:target="_blank"}.
+  - This MUST conform to the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-Core-ServerRequirements-CapabilityStatement-1v0.3.xml){:target="_blank"}.
 
 <!--  with the See also the Care Connect [Core API CapabilityStatement Requirements](api_foundation_capability.html) profile. -->
 <!-- 
@@ -146,7 +146,7 @@ Specific server search capabilities are described in detail in each of the resou
 
 ### 1.3 Capability Statement ###
 
-FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-ServerRequirements-CapabilityStatement-1v0.2.xml){:target="_blank"}
+FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-Core-ServerRequirements-CapabilityStatement-1v0.3.xml){:target="_blank"}
 
 <!--[Demographics Batch Service (DBS)](CareConnect-ServerRequirements-CapabilityStatement-1){:target="_blank"}-->
 
