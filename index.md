@@ -133,7 +133,17 @@ All search parameters MUST be described in the FHIR CapabilityStatement.
 
 # API Roadmap #
 
+
 {% include custom/under.construction.html content="Please check back later for any updates to this section." %}
+
+<!--
+<img src="images/CoreAPIRoadmapv0.1.png">
+-->
+<!--
+[CoreAPIRoadmapv0.1](CoreAPIRoadmapv0.1.PNG)
+-->
+
+
 
 
 <!--

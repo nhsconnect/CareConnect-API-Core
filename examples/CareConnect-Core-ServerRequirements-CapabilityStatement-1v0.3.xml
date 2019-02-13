@@ -2,7 +2,7 @@
 <CapabilityStatement xmlns="http://hl7.org/fhir">
 	<url value="https://fhir.nhs.uk/STU3/CapabilityStatement/CareConnect-Core-ServerRequirements-CapabilityStatement-1"/>
 	<version value="1.0.0"/>
-	<name value="CareConnect-Requirements-CapabilityStatement-1"/>
+	<name value="CareConnect-Core-ServerRequirements-CapabilityStatement-1"/>
 	<status value="draft"/>
 	<date value="2019-02-12"/>
 	<publisher value="NHS Digital"/>
@@ -14,7 +14,7 @@
 			<use value="work"/>
 		</telecom>
 	</contact>
-	<description value="The Care Connect Core API aims to better support the delivery of care by opening up information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources"/>
+	<description value="This profile defines the expected capabilities of the Care Connect Core Server conforming to the Care Connect Core API IG."/>
 	<!--is there an eng iso code?-->
 	<!--<jurisdiction>
     <coding>
@@ -30,6 +30,67 @@
 	<!--should servers handle non-formal and generic XML and JSON MIME types?-->
 	<format value="application/fhir+xml"/>
 	<format value="application/fhir+json"/>
+	<!--Clinical Summary Profiles-->
+	<!--CareConnect-AllergyIntolerance-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-AllergyIntolerance-1"/>
+	</profile>
+	<!--CareConnect-Condition-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Condition-1"/>
+	</profile>
+	<!--CareConnect-Procedure-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Procedure-1"/>
+	</profile>
+	<!--Diagnostics Profiles-->
+	<!--CareConnect-Observation-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Observation-1"/>
+	</profile>
+	<!--Medication Profiles-->
+	<!--CareConnect-Medication-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Medication-1"/>
+	</profile>
+	<!--CareConnect-MedicationRequest-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationRequest-1"/>
+	</profile>
+	<!--CareConnect-MedicationStatement-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-MedicationStatement-1"/>
+	</profile>
+	<!--CareConnect-Immunization-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/StructureDefinition/CareConnect-Immunization-1"/>
+	</profile>
+	<!--Entities-->
+	<!--CareConnect-Location-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Location-1"/>
+	</profile>
+	<!--CareConnect-Organization-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Organization-1"/>
+	</profile>
+	<!--CareConnect-Patient-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Patient-1"/>
+	</profile>
+	<!--CareConnect-Practitioner-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Practitioner-1"/>
+	</profile>
+	<!--CareConnect-PractitionerRole-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-PractitionerRole-1"/>
+	</profile>
+	<!--Management-->
+	<!--CareConnect-Encounter-1-->
+	<profile>
+		<reference value="https://fhir.hl7.org.uk/STU3/StructureDefinition/CareConnect-Encounter-1"/>
+	</profile>
 	<rest>
 		<mode value="server"/>
 		<!--Clinical Summary Resources-->
@@ -221,6 +282,7 @@
 				</extension>
 				<name value="date"/>
 				<type value="date"/>
+				<documentation value="The server SHALL support the date search modifiers &#39;ge&#39;,&#39;le&#39;,&#39;gt&#39;, and &#39;lt&#39;"/>
 			</searchParam>
 		</resource>
 		<!--Clinical DiagnosticsResources-->
@@ -285,6 +347,7 @@
 				</extension>
 				<name value="date"/>
 				<type value="date"/>
+				<documentation value="The server SHALL support the date search modifiers &#39;ge&#39;,&#39;le&#39;,&#39;gt&#39;, and &#39;lt&#39;"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
@@ -835,6 +898,7 @@
 				</extension>
 				<name value="date"/>
 				<type value="date"/>
+				<documentation value="The server SHALL support the date search modifiers &#39;ge&#39;,&#39;le&#39;,&#39;gt&#39;, and &#39;lt&#39;"/>
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">

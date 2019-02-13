@@ -40,5 +40,11 @@ The labels documented in the GDS development process stages are:
 - <b>Live:</b> Release live APIs
 - <b>Discontinued:</b> APIs which have been discontinued and should not be used for new development.
 
+### 1.3.0 GDS Stage - Alpha ###
+
+This implementation guide is currently in the “Alpha” stage. It is intended to support engagement with stakeholders interested in being involved with early development work and influencing the direction taken. This implementation guide is likely to change substantially.
+
+<!--
 ### 1.3.0 GDS Stage - Beta ###
 This implementation guide is currently in the “Beta” stage. It is intended to support engagement with ‘first of type’ or early adopters by the creation of first of type or pilot systems for testing, proof of concept etc. This development can assist in progression to a release candidate for a wider rollout. This implementation guide is still under active development and subject to change.
+-->
