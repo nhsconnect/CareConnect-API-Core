@@ -131,14 +131,16 @@ To be conformant, provider systems are required to implement all of the MUST par
 All search parameters MUST be described in the FHIR CapabilityStatement.
 
 
-# API Roadmap #
+# Core API Roadmap #
+
+The diagram outlines the development roadmap for the Core API.
 
 
-{% include custom/under.construction.html content="Please check back later for any updates to this section." %}
+<!-- include custom/under.construction.html content="Please check back later for any updates to this section." -->
 
-<!--
-<img src="images/CoreAPIRoadmapv0.1.png">
--->
+
+<img src="images/roadmap/CoreAPIRoadmapv0.2.png">
+
 <!--
 [CoreAPIRoadmapv0.1](CoreAPIRoadmapv0.1.PNG)
 -->
