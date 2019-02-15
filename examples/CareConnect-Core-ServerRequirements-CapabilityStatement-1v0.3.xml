@@ -15,14 +15,6 @@
 		</telecom>
 	</contact>
 	<description value="This profile defines the expected capabilities of the Care Connect Core Server conforming to the Care Connect Core API IG."/>
-	<!--is there an eng iso code?-->
-	<!--<jurisdiction>
-    <coding>
-      <system value="urn:iso:std:iso:3166"/>
-      <code value="GB"/>
-      <display value="United Kingdom"/>
-    </coding>
-  </jurisdiction>-->
 	<copyright value="Copyright © 2019 NHS Digital"/>
 	<kind value="requirements"/>
 	<fhirVersion value="3.0.1"/>

@@ -3,7 +3,7 @@ output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
 #topnav_title: Get Unstructured Document API| FHIR&reg;
-topnav_title: Care Connect Core API| FHIR&reg;
+topnav_title: Care Connect Core API&nbsp;| FHIR&reg;
 # this appears on the top navigation bar next to the home button
 
 #site_title: Get Unstructured Document API
