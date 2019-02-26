@@ -8,7 +8,9 @@ toc: false
 summary: A brief introduction to the Care Connect Core API
 ---
 
-{% include important.html content="This site is under active development by NHS Digital on behalf of INTEROPen and is intended to provide all the technical resources you need to successfully develop the Care Connect Core API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
+{% include important.html content="This site is under active development by NHS Digital in collaboration with INTEROPen and is intended to provide all the technical resources you need to successfully develop the Care Connect Core API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." %}
+
+<!-- include important.html content="This site is under active development by NHS Digital on behalf of INTEROPen and is intended to provide all the technical resources you need to successfully develop the Care Connect Core API. This project is being developed using an agile methodology so iterative updates to content will be added on a regular basis." -->
 
 # Introduction #
 
@@ -16,7 +18,10 @@ summary: A brief introduction to the Care Connect Core API
 This is the Care Connect Get Unstructured Document RESTful FHIR STU3 ‘Read Only’ experimental API implementation guide. It is a component specification of the Care Connect API (CCAPI) suite. 
 -->
 
+The Care Connect RESTful APIs have been developed by NHS Digital in collaboration with the INTEROPen community. These APIs aim to  better support the delivery of care by opening up information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.
+<!--
 The Care Connect RESTful APIs have been developed collaboratively by NHS Digital and the INTEROPen community. These APIs aim to  better support the delivery of care by opening up information and data held across different clinical care settings through the use of nationally defined INTEROPen FHIR® resources.
+-->
 
 The Care Connect RESTful APIs are Based on FHIR STU3 and define the minimum conformance requirements and standards for retrieving patient data and records.
 
