@@ -4,7 +4,7 @@ keywords: getcarerecord, structured, rest, resource
 tags: [conformance]
 sidebar: foundations_sidebar
 permalink: conformance_coreapi.html
-summary: "Overview of the Conformance section"
+summary: "Overview of Core API Conformance expectations"
 ---
 
 {% include custom/search.warnbanner.html %}
@@ -13,7 +13,23 @@ summary: "Overview of the Conformance section"
 
 <!--## 1. Pre-Requisites for FHIR Servers ##-->
 
-## 1.Care Connect Core API Conformance Requirements ##
+
+## 1. FHIR Resource Conformance Requirements ##
+
+- Where Care Connect profiles exist for resources they MUST be used. 
+  - The Care Connect profiles MUST be used within the API and implementation and feedback is encouraged.
+- The Core API can be extended to use resources for which no Care Connect profiles currently exist.
+  - If no Care Connect profile exists then engagement with INTEROPen is encouraged so that profiles can be considered for later product releases.
+- When using Care Connect profiles and extensions are required, Care Connect extensions SHOULD be used.
+  - Care Connect profile extensions should be the first option when extending profiles. If a local use case requires further extension then this should be initially a “non” Care Connect extension. Engagement with the INTEROPen community is encouraged to validate the extension.
+- When using the Care Connect Core API the implementer can choose which resource types to support.
+  - All resource types are optional (even Patient). The implementer can choose the resources that meets the use cases being catered for.
+- Resources MUST identify the CareConnect profile supported as part of the [FHIR Base Resource](https://hl7.org/fhir/STU3/resource-definitions.html#Resource.meta){:target="_blank"} i.e. populate the FHIR `meta.profile` attribute for each instance.
+
+
+## 2. Server Conformance Requirements ##
+
+<!-- ## 1. Care Connect Core API Server Conformance Requirements ## -->
 
 This section outlines conformance requirements for Care Connect Core API Servers<!--and Client applications-->, identifying FHIR profiles, RESTful operations and the search parameters to be supported. 
 
@@ -21,11 +37,11 @@ This section outlines conformance requirements for Care Connect Core API Servers
 Note: The individual Care Connect Core profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the US Core actors.
 -->
 
-### 1.1 Care Connect Core API Requirements ###
+### 2.1 Conformance Requirements for Care Connect Core Server ###
 
 - MUST support HL7 FHIR STU3 version 3.0.1.
 - MUST Implement REST behavior according to the [FHIR specification]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/http.html){:target="_blank"}
-- Resources MUST identify the CareConnect profile supported as part of the [FHIR Base Resource](https://hl7.org/fhir/STU3/resource-definitions.html#Resource.meta){:target="_blank"} i.e. populate the FHIR `meta.profile` attribute for each instance.
+<!-- Resources MUST identify the CareConnect profile supported as part of the [FHIR Base Resource](https://hl7.org/fhir/STU3/resource-definitions.html#Resource.meta){:target="_blank"} i.e. populate the FHIR `meta.profile` attribute for each instance. -->
 - MUST support JSON format for all CareConnect API interactions and SHOULD support XML format.
 - MUST declare a CapabilityStatement identifying the list of profiles, operations and search parameters supported.
   - In order to be a compliant FHIR server, Servers <!--client systems--> MUST expose a valid FHIR [CapabilityStatement]({{ site.hl7_baseurl.stu3 }}http://hl7.org/fhir/STU3/capabilitystatement.html){:target="_blank"} instance. See the [capabilities](api_foundation_capability.html) interaction.
@@ -50,7 +66,7 @@ In order to be a compliant FHIR server, client systems need to expose a valid FH
 -->
 
 
-### 1.2 Profile Interaction Summary ###
+### 2.2 Profile Interaction Summary ###
 
 All servers MUST make available the <a href="http://hl7.org/fhir/STU3/http.html#read">read </a> and <a href="http://hl7.org/fhir/STU3/http.html#search">search </a> interactions for the resources the server chooses to support.
 
@@ -143,17 +159,35 @@ Specific server search capabilities are described in detail in each of the resou
 </tr>
 </table>
 
+For `date` type search requests, servers MUST support the following modifier prefixes to the parameter value:
+- greater than or equal to `ge`
+- less than or equal to `le`
+- greater than `gt`
+- less than `lt`
 
-### 1.3 Capability Statement ###
+### 2.3 Capability Statement ###
 
 FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-Core-ServerRequirements-CapabilityStatement-1v0.3.xml){:target="_blank"}
 
 <!--[Demographics Batch Service (DBS)](CareConnect-ServerRequirements-CapabilityStatement-1){:target="_blank"}-->
 
- 
+## 3. Client Conformance Requirements ##
+
+<!-- ## 2. Care Connect Core API Client Conformance Requirements ## -->
+
+This section outlines conformance requirements for Care Connect Core API <!--Servers and --> Client applications: 
+
+- When using the Care Connect Core API to access clinical data, a verified NHS number SHOULD be used.
 
 
-### 1.4 NHS Number ###
+## 4. Security Conformance Considerations ##
+
+TBC
+
+
+<!-- ### 1.4 NHS Number ### -->
+
+## 5. NHS Number ##
 
 NHS Number SHOULD be used with the Care Connect Core API. If the NHS Number is used, this MUST be a verified NHS Number. This can be achieved using a spine accredited system, a [Demographics Batch Service (DBS)](https://developer.nhs.uk/library/systems/demographic-batch-service-dbs/){:target="_blank"} batch-traced record (CSV), or using a [Spine Mini Services Provider (HL7v3)](https://nhsconnect.github.io/spine-smsp/){:target="_blank"} to verify the NHS Number.
 <!-- 

@@ -50,7 +50,8 @@ entries:
   - title: Conformance
     output: web
     folderitems:
-    - title: Server Conformance
+    #- title: Server Conformance
+    - title: Conformance Requirements
       url: /conformance_coreapi.html
       output: web
   - title: Resources
