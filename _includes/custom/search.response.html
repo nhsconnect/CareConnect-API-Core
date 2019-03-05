@@ -5,11 +5,42 @@
 
 <p>A full set of response codes can be found here <a href="profiles_api_codes.html">API Response Codes</a>. FHIR Servers MUST support the following response codes:</p>
 
+<!--
 <table>
   <tbody>
     <tr>
       <td>200</td>
       <td>successful operation</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>resource not found</td>
+    </tr>
+    <tr>
+      <td>410</td>
+      <td>resource deleted</td>
+    </tr>
+  </tbody>
+</table>
+-->
+
+<table>
+  <tbody>
+    <tr>
+      <td>200</td>
+      <td>successful operation</td>
+    </tr>
+    <tr>
+      <td>400</td>
+      <td>invalid parameter</td>
+    </tr>
+    <tr>
+      <td>401/4xx</td>
+      <td>unauthorized request</td>
+    </tr>
+    <tr>
+      <td>403</td>
+      <td>insufficient scope</td>
     </tr>
     <tr>
       <td>404</td>

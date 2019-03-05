@@ -193,7 +193,7 @@ For the purpose of the Core API, minimum security conformance requirements are a
 - Systems MUST support Transport Layer Security Version 1.2 (TLS v1.2) or higher for all transmissions
 - For authentication, systems SHOULD support [Authentication Types](https://developer.nhs.uk/apis/national-authentication/AuthenType_Intro.html) as used within the NHS Identity Service.
 - For authorisation systems SHOULD support the OAuth 2.0 standard. See the NHS Identity Service [Authorisation Service Overview](https://nhsconnect.github.io/national-authentication/Intro_Authorisation.html)
-- Systems SHOULD use ID & Access Token as specified [here](https://developer.nhs.uk/apis/national-authentication/TechOverview_Artefacts.html#introduction)
+- Systems SHOULD use ID & Access Tokens as specified [here](https://developer.nhs.uk/apis/national-authentication/TechOverview_Artefacts.html#introduction)
 
 <!--and Authorization, Systems SHALL use the Smart on FHIR OAuth 2.0 profiles. NOTE: The Smart On FHIR specifications include the required OAuth2 scopes for enabling security decisions.
 - Alignment with RBAC - The national authorisation services are likely to use the national RBAC roles and activities associated with authenticated users to inform it’s authorisation decisions.
