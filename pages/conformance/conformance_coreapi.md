@@ -182,7 +182,30 @@ This section outlines conformance requirements for Care Connect Core API <!--Ser
 
 ## 4. Security Conformance Considerations ##
 
-TBC
+<font color="red"> WORK IN PROGRESS - NEEDS DISCUSSION </font>
+
+All Core API transactions must be secured appropriately with access limited to authorized individuals, data protected in transit and appropriate audit measures taken.
+
+Implementers should be aware of the [security considerations](http://hl7.org/fhir/STU3/security.html) associated with FHIR transactions.
+
+For the purpose of the Core API, minimum security conformance requirements are as follows:
+
+- Systems MUST support Transport Layer Security Version 1.2 (TLS v1.2) or higher for all transmissions
+- For authentication, systems SHOULD support [Authentication Types](https://developer.nhs.uk/apis/national-authentication/AuthenType_Intro.html) as used within the NHS Identity Service.
+- For authorisation systems SHOULD support the OAuth 2.0 standard. See the NHS Identity Service [Authorisation Service Overview](https://nhsconnect.github.io/national-authentication/Intro_Authorisation.html)
+- Systems SHOULD use ID & Access Token as specified [here](https://developer.nhs.uk/apis/national-authentication/TechOverview_Artefacts.html#introduction)
+
+<!--and Authorization, Systems SHALL use the Smart on FHIR OAuth 2.0 profiles. NOTE: The Smart On FHIR specifications include the required OAuth2 scopes for enabling security decisions.
+- Alignment with RBAC - The national authorisation services are likely to use the national RBAC roles and activities associated with authenticated users to inform it’s authorisation decisions.
+-->
+- Systems MUST implement consent requirements as per local policies.
+
+<!-- not taking place over a secure network connection. (Using TLS even within a secured network environment is still encouraged to provide defense in depth.) -->
+<!--
+- Systems SHOULD use national Role Based Access Control [RBAC](https://developer.nhs.uk/apis/spine-core/security_rbac.html) - supports the complex access control requirements of the NHS.
+
+-->
+
 
 
 <!-- ### 1.4 NHS Number ### -->
