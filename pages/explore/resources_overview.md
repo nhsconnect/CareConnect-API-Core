@@ -93,7 +93,7 @@ This section looks at the Care Connect Core profile API's covered within this im
 <tr>
 <td><a href="api_clinical_condition.html">Condition</a> (Problem)</td>
 <td>&nbsp;</td>
-<td><a href="api_medication_medicationorder.html">MedicationOrder</a></td>
+<td><a href="api_medication_medicationrequest.html">MedicationRequest</a></td>
 </tr>
 <tr>
 <td><a href="api_clinical_procedure.html">Procedure</a></td>
