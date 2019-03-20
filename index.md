@@ -86,7 +86,7 @@ The resources in scope for this API are:
 </tr>
 <tr>
 <td><a href="api_entity_patient.html">Patient</a></td>
-<td><a href="api_entity_organisation.html">Organization</a></td>
+<td><a href="api_entity_organization.html">Organization</a></td>
 <td><a href="api_management_encounter.html">Encounter</a></td><td></td>
 </tr>
 <tr>
