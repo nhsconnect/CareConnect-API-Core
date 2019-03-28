@@ -31,7 +31,7 @@ summary: "Overview of Core API Conformance expectations"
 
 <!-- ## 1. Care Connect Core API Server Conformance Requirements ## -->
 
-This section outlines conformance requirements for Care Connect Core API Servers<!--and Client applications-->, identifying FHIR profiles, RESTful operations and the search parameters to be supported. 
+This section outlines conformance requirements for Care Connect Core API Servers<!--and Client applications-->, identifying FHIR profiles, content types, RESTful operations and the search parameters to be supported. 
 
 <!--
 Note: The individual Care Connect Core profiles identify the structural constraints, terminology bindings and invariants, however, implementers must refer to the conformance requirements for details on the RESTful operations, specific profiles and the search parameters applicable to each of the US Core actors.
@@ -159,7 +159,7 @@ Specific server search capabilities are described in detail in each of the resou
 </tr>
 </table>
 
-For `date` type search requests, servers MUST support the following modifier prefixes to the parameter value:
+For `date` type search requests, servers SHOULD support the following modifier prefixes to the parameter value:
 - greater than or equal to `ge`
 - less than or equal to `le`
 - greater than `gt`
@@ -170,6 +170,70 @@ For `date` type search requests, servers MUST support the following modifier pre
 FHIR Servers MUST support the Care Connect Core API `Requirements` [Capability Statement](examples/CareConnect-Core-ServerRequirements-CapabilityStatement-1v0.3.xml){:target="_blank"}
 
 <!--[Demographics Batch Service (DBS)](CareConnect-ServerRequirements-CapabilityStatement-1){:target="_blank"}-->
+
+### 2.4 Content Types ###
+
+This section details FHIR Server content type conformance requirements: 
+
+<table style="min-width:100%;width:100%">
+<tr i
+d="clinical">
+    <th style="width:35%;">MIME Type</th>
+    <th style="width:25%;">Rationale</th>
+    <th style="width:40%;">Conformance</th>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">application/fhir+xml</code></td>
+    <td><code class="highlighter-rouge">Server supports formal MIME-type for FHIR resources</code></td>
+    <td>SHOULD</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">application/fhir+json</code></td>
+      <td><code class="highlighter-rouge">Server supports formal MIME-type for FHIR resources</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">application/xml+fhir</code></td>
+    <td><code class="highlighter-rouge">Server supports DSTU2 MIME-type for backwards compatibility</code></td>
+    <td>SHOULD</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">application/json+fhir</code></td>
+    <td><code class="highlighter-rouge">Server supports DSTU2 MIME-type for backwards compatibility</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">application/xml</code></td>
+    <td><code class="highlighter-rouge">Server to gracefully handle generic MIME types</code></td>
+    <td>SHOULD</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">application/json</code></td>
+   <td><code class="highlighter-rouge">Server to gracefully handle generic MIME types</code></td>
+    <td>MUST</td>
+</tr>
+<tr>
+    <td><code class="highlighter-rouge">text/json</code></td>
+   <td><code class="highlighter-rouge">Server to gracefully handle generic MIME types</code></td>
+    <td>MUST</td>
+</tr>
+</table>
+
+<!--
+The Server MUST support both formal MIME-types for FHIR resources:
+XML: application/fhir+xml
+JSON: application/fhir+json
+The NRLS Server SHALL also support DSTU2 MIME-types for backwards compatibility:
+XML: application/xml+fhir
+JSON: application/json+fhir
+The NRLS Server SHALL also gracefully handle generic XML and JSON MIME types:
+XML: application/xml
+JSON: application/json
+JSON: text/json
+-->
+
+- The server SHALL support the optional `_format` parameter in order to allow the client to specify the response format by its MIME-type. If both are present, the `_format` parameter overrides the `Accept` header value in the request.
+
 
 ## 3. Client Conformance Requirements ##
 
