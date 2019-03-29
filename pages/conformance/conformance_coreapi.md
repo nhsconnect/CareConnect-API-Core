@@ -232,7 +232,7 @@ JSON: application/json
 JSON: text/json
 -->
 
-- The server SHALL support the optional `_format` parameter in order to allow the client to specify the response format by its MIME-type. If both are present, the `_format` parameter overrides the `Accept` header value in the request.
+- The server MUST support the optional `_format` parameter in order to allow the client to specify the response format by its MIME-type. If both are present, the `_format` parameter overrides the `Accept` header value in the request.
 
 
 ## 3. Client Conformance Requirements ##
@@ -246,7 +246,9 @@ This section outlines conformance requirements for Care Connect Core API <!--Ser
 
 ## 4. Security Conformance Considerations ##
 
-<font color="red"> WORK IN PROGRESS - NEEDS DISCUSSION </font>
+{% include custom/under.construction.html content="Core API Security conformance is being progressed through the INTEROPen community. This section is a work in progress." %}
+
+<!--<font color="red"> WORK IN PROGRESS - NEEDS DISCUSSION </font>-->
 
 All Core API transactions must be secured appropriately with access limited to authorized individuals, data protected in transit and appropriate audit measures taken.
 
